@@ -1,0 +1,9 @@
+{
+	"compilerOptions": {
+		"module": "es6",
+		"moduleResolution": "node",
+		"checkJs": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false
+	}
+}

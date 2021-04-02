@@ -5,13 +5,12 @@
 	"main": "index.js",
 	"scripts": {
 		"build": "docker build --tag scrape-alert .",
-		"run": "./scripts/run.sh"
+		"run": "node ./index.js",
+		"run:container": "./scripts/run.sh"
 	},
 	"license": "ISC",
 	"dependencies": {
-		"axios": "^0.20.0",
-		"jsdom": "^16.4.0",
 		"nodemailer": "^6.4.11",
-		"pretty": "^2.0.0"
+		"puppeteer": "^8.0.0"
 	}
 }

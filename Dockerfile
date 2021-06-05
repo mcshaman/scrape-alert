@@ -6,7 +6,8 @@ RUN apk add chromium
 
 RUN chown node:node .
 
-COPY --chown=node:node ./index.js package.json config-test.js ./
+COPY --chown=node:node ./index.js ./package.json ./config-test.js ./
+COPY --chown=node:node ./lib ./lib
 
 RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 	npm i --only=production

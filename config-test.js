@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	from: '"Foo" <foo@example.com>',
 	to: '"Bar" <bar@example.com>',
 	targets: [

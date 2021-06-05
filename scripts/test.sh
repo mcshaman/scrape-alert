@@ -1,5 +1,6 @@
 #!/bin/bash
 
-export CONFIG_PATH="../config-test.js"
+CONFIG_PATH="$(pwd)/config-test.js"
+export CONFIG_PATH
 
-./run.sh 
+./scripts/run.sh 

@@ -3,14 +3,16 @@
 	"version": "1.0.0",
 	"description": "",
 	"main": "index.js",
+	"type": "module",
 	"scripts": {
-		"build": "docker build --tag scrape-alert .",
 		"run": "node ./index.js",
-		"run:container": "./scripts/run.sh"
+		"run:container": "./scripts/run.sh",
+		"test": "./scripts/test.sh"
 	},
 	"license": "ISC",
 	"dependencies": {
-		"nodemailer": "^6.4.11",
+		"meow": "^10.0.0",
+		"nodemailer": "^6.6.1",
 		"puppeteer": "^8.0.0"
 	}
 }

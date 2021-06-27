@@ -5,8 +5,8 @@
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
-		"run": "node ./index.js",
-		"run:container": "./scripts/run.sh",
+		"start": "node ./index.js",
+		"start:container": "./scripts/run.sh",
 		"test": "./scripts/test.sh"
 	},
 	"license": "ISC",

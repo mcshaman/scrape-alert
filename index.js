@@ -6,6 +6,7 @@ const cli = meow(`
 	  $ scrape-alert config
 `, {
 	importMeta: import.meta,
+	allowUnknownFlags: false,
 })
 
 const configPath = cli.input[0]
@@ -16,4 +17,6 @@ if (configPath) {
 
 		targets.forEach((pTarget) => scrape(pTarget, options))
 	})
+} else {
+	cli.showHelp()
 }

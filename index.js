@@ -1,6 +1,8 @@
 import meow from 'meow'
 import scrape from './lib/scrape.js'
 
+global.DB_FILE_PATH = './results.json'
+
 const cli = meow(`
 	Usage
 	  $ scrape-alert config

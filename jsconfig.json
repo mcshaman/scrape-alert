@@ -1,9 +1,11 @@
 {
+	"exclude": ["node_modules"],
 	"compilerOptions": {
 		"module": "esnext",
 		"moduleResolution": "node",
 		"checkJs": true,
 		"noUnusedLocals": true,
-		"noUnusedParameters": false
+		"noUnusedParameters": false,
+		"strictNullChecks": true
 	}
 }

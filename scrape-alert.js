@@ -1,7 +1,5 @@
 import meow from 'meow'
-import scrape from './lib/scrapeAlert.js'
-
-global.DB_FILE_PATH = './results.json'
+import scrapeAlert from './lib/scrapeAlert.js'
 
 const cli = meow(`
 	Usage
@@ -17,7 +15,7 @@ if (configPath) {
 	import(configPath).then((module) => {
 		const { targets, ...options } = module.default
 
-		targets.forEach((pTarget) => scrape(pTarget, options))
+		scrapeAlert(targets, options)
 	})
 } else {
 	cli.showHelp()

@@ -6,7 +6,7 @@ RUN apk add chromium
 
 RUN chown node:node .
 
-COPY --chown=node:node ./index.js ./send-report.js ./package.json ./config-test.js ./
+COPY --chown=node:node ./scrape-alert.js ./send-report.js ./package.json ./config-test.js ./
 COPY --chown=node:node ./lib ./lib
 
 RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
@@ -14,4 +14,4 @@ RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
 
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
-ENTRYPOINT ["node", "./index.js"]
+ENTRYPOINT ["node", "./scrape-alert.js"]

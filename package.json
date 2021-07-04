@@ -2,12 +2,12 @@
 	"name": "scrape-alert",
 	"version": "1.0.0",
 	"description": "",
-	"main": "index.js",
+	"main": "scrape-alert.js",
 	"type": "module",
 	"scripts": {
-		"start": "node ./index.js",
+		"start": "node ./scrape-alert.js",
 		"start:container": "./scripts/run.sh",
-		"test": "node ./index.js ./config-test.js",
+		"test": "node ./scrape-alert.js ./config-test.js",
 		"test:container": "./scripts/test.sh"
 	},
 	"license": "ISC",

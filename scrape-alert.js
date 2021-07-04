@@ -1,5 +1,5 @@
 import meow from 'meow'
-import scrape from './lib/scrape.js'
+import scrape from './lib/scrapeAlert.js'
 
 global.DB_FILE_PATH = './results.json'
 

@@ -7,4 +7,4 @@ docker run \
 	-ti \
 	--mount type=bind,source="$CONFIG_PATH",target=/home/node/app/config.js \
 	scrape-alert \
-	./config-test.js
+	./config.js

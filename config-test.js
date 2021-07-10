@@ -1,6 +1,7 @@
 export default {
 	from: '"Foo" <foo@example.com>',
 	to: '"Bar" <bar@example.com>',
+	synchronous: false,
 	targets: [
 		{
 			name: 'Test Alert 1',

@@ -1,17 +1,16 @@
 FROM node:current-alpine
 
-WORKDIR /home/node/app
-
 RUN apk add chromium
 
-RUN chown node:node .
+RUN apk add git
 
-COPY --chown=node:node ./scrape-alert.js ./send-report.js ./package.json ./config-test.js ./
-COPY --chown=node:node ./lib ./lib
+WORKDIR /root
 
-RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
-	npm i --only=production
+RUN PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+RUN npm install --global --only=production https://github.com/mcshaman/scrape-alert
 
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
-ENTRYPOINT ["node", "./scrape-alert.js"]
+WORKDIR /home/node
+
+ENTRYPOINT ["scrape-alert"]

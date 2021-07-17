@@ -2,7 +2,10 @@
 	"name": "scrape-alert",
 	"version": "1.0.0",
 	"description": "",
-	"main": "scrape-alert.js",
+	"bin": {
+		"scrape-alert": "./scrape-alert.mjs",
+		"send-report": "./send-report.mjs"
+	},
 	"type": "module",
 	"scripts": {
 		"start": "node ./scrape-alert.js",

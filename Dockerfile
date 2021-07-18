@@ -13,4 +13,6 @@ ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 WORKDIR /home/node/app
 
-ENTRYPOINT ["scrape-alert"]
+ENTRYPOINT []
+
+CMD ["scrape-alert"]

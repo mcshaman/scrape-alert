@@ -11,6 +11,6 @@ RUN npm install --global --only=production https://github.com/mcshaman/scrape-al
 
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
-WORKDIR /home/node
+WORKDIR /home/node/app
 
 ENTRYPOINT ["scrape-alert"]

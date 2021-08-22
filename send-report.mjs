@@ -6,13 +6,13 @@ import sendReport from './lib/sendReport.js'
 const cli = meow(`
 	Usage
 	  $ send-report
-	
+
 	Options
 	  --from       Senders email address. Can be plain 'sender@server.com' or formatted '"Sender Name" sender@server.com'.
 
 	  --purge      Purge results database after sending report (defaults to false).
 
-	  --smtp-host  SMTP server hostname or IP address. If any of the SMTP options are not defined test SMTP credentials will be used. 
+	  --smtp-host  SMTP server hostname or IP address. If any of the SMTP options are not defined test SMTP credentials will be used.
 
 	  --smtp-pass  SMTP user password. If any of the SMTP options are not defined test SMTP credentials will be used.
 

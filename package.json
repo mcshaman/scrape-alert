@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"description": "",
 	"bin": {
-		"scrape-alert": "./scrape-alert.mjs",
-		"send-report": "./send-report.mjs"
+		"scrape-alert": "./scrape-alert.js",
+		"send-report": "./send-report.js"
 	},
 	"type": "module",
 	"scripts": {

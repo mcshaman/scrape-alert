@@ -7,6 +7,11 @@
 		"send-report": "./send-report.js"
 	},
 	"type": "module",
+	"files": [
+		"lib",
+		"scrape-alert.js",
+		"send-report.js"
+	],
 	"scripts": {
 		"start": "node ./scrape-alert.js",
 		"start:container": "./scripts/run.sh",

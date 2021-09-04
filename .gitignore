@@ -2,3 +2,5 @@
 
 config.js
 results.json
+
+*.tgz

@@ -7,6 +7,6 @@
 		"noUnusedParameters": false,
 		"strictNullChecks": true,
 		"target": "es2022",
-		"lib": ["ES2023"]
+		"lib": ["ES2023", "DOM"]
 	}
 }

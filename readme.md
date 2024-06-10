@@ -6,7 +6,7 @@ After making changes to Scrape Alert rebuild the Docker image
 
 Build docker image
 ```
-docker build --tag scrape-alert .
+npm run build
 ```
 
 Start Scrape Alert

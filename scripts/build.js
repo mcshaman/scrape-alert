@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import childProcess from 'child_process'
 import fs from 'fs'
 import path from 'path'
@@ -14,6 +16,11 @@ childProcess.execSync(`
 		--build-arg PACK_FILE="${packFile}" \
 		--tag ${name}:${version} \
 		.
+`, { stdio: 'inherit' })
+
+
+childProcess.execSync(`
+	docker tag ${name}:${version} ${name}:latest
 `, { stdio: 'inherit' })
 
 fs.unlinkSync(path.join(process.cwd(), packFile))

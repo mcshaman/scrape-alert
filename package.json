@@ -15,9 +15,9 @@
 	"scripts": {
 		"start": "node ./scrape-alert.js",
 		"start:container": "./scripts/run.sh",
-		"test": "node ./scrape-alert.js ./config-test.js",
-		"test:container": "./scripts/test.sh",
-		"test:mocha": "mocha ./lib/**/*.test.js",
+		"demo": "node ./scrape-alert.js ./config-demo.mjs",
+		"demo:container": "./scripts/demo.sh",
+		"test": "mocha ./lib/**/*.test.js",
 		"build": "node ./scripts/build.js"
 	},
 	"license": "ISC",

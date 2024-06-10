@@ -1,6 +1,7 @@
-FROM node:current-alpine
+FROM node:18.20-alpine
 
-RUN apk add chromium
+RUN apk update && \
+	apk add chromium=125.0.6422.112-r0
 
 WORKDIR /root
 

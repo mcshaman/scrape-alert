@@ -1,12 +1,12 @@
 {
 	"exclude": ["node_modules/"],
 	"compilerOptions": {
-		"module": "esnext",
-		"moduleResolution": "node",
+		"module": "Node16",
 		"checkJs": true,
 		"noUnusedLocals": true,
 		"noUnusedParameters": false,
 		"strictNullChecks": true,
-		"target": "es2015"
+		"target": "es2022",
+		"lib": ["ES2023"]
 	}
 }

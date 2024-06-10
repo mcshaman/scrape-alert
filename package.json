@@ -26,7 +26,7 @@
 		"lowdb": "^2.1.0",
 		"meow": "^13.2.0",
 		"nodemailer": "^6.9.13",
-		"puppeteer": "^8.0.0"
+		"puppeteer": "^22.10.0"
 	},
 	"devDependencies": {
 		"@types/mocha": "^10.0.6",

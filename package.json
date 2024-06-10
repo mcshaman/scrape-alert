@@ -22,9 +22,9 @@
 	},
 	"license": "ISC",
 	"dependencies": {
-		"common-tags": "^1.8.0",
+		"common-tags": "^1.8.2",
 		"lowdb": "^2.1.0",
-		"meow": "^10.0.0",
+		"meow": "^13.2.0",
 		"nodemailer": "^6.9.13",
 		"puppeteer": "^8.0.0"
 	},

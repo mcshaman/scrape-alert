@@ -1,4 +1,4 @@
-FROM node:18.20-alpine
+FROM node:22.2-alpine
 
 RUN apk update && \
 	apk add chromium=125.0.6422.112-r0
